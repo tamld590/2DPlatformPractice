@@ -10,6 +10,7 @@ TagManager:
   - Trammel
   - FinalRoom
   - Finishline
+  - Pit
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ground
   - Wall
   - Player
-  - 
+  - Pit
   - 
   - 
   - 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.WebSockets;
 using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
@@ -15,18 +16,13 @@ public class PlayerRespawn : MonoBehaviour
     }
     public void CheckRespawn()
     {
-        int respawnTime = 0;
-        while (respawnTime < 4) 
+        if (currentCheckpoint == null)
         {
-            if (respawnTime >=3)
-            {
-                uiManager.GameOver();
-                break;
-            }
-            RespawnLife();
-            respawnTime++;
+            Time.timeScale = 0;
+            uiManager.GameOver();
+            return;
         }
-        return;
+        RespawnLife();
     }
     private void RespawnLife()
     {

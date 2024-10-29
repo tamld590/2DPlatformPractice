@@ -63,7 +63,7 @@ public class Spikehead : EnemyDamage
         destination = transform.position;
         attacking = false;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private new void OnTriggerEnter2D(Collider2D collision)
     {
         SoundManager.instance.PlaySound(spikeImpactSound);
         base.OnTriggerEnter2D(collision);

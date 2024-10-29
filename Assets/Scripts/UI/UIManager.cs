@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class UIManager : MonoBehaviour
 
     [Header ("Paused")]
     [SerializeField] private GameObject pauseScreen;
+    private Text textComponent;
+    //private PlayerRespawn playerRespawn;
 
-    private PlayerRespawn playerRespawn;
     private void Awake()
     {
         gameOverScreen.SetActive(false);
@@ -41,8 +43,9 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        gameOverScreen.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //gameOverScreen.SetActive(false);
+        Time.timeScale = 1.0f;
     }
     public void MainMenu()
     {
@@ -82,15 +85,19 @@ public class UIManager : MonoBehaviour
     #region MenuStart
     public void StartMenu()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 1));
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 3));
+    }
+    public void SelectLevel()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 8));
     }
     public void Setting()
     {
-        
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 1));
     }
     public void Credits()
     {
-
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 2));
     }
     #endregion
     #region FinishWin
@@ -99,9 +106,27 @@ public class UIManager : MonoBehaviour
         finishWinScreen.SetActive(true);
         SoundManager.instance.PlaySound(finishWinSound);
     }
-    public void NextLevel()
+    #endregion
+    #region Levels
+    public void Level1()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 2));
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 3));
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 4));
+    }
+    public void Level3()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 5));
+    }
+    public void Level4()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 6));
+    }
+    public void Level5()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("level", 7));
     }
     #endregion
 }
