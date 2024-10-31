@@ -19,12 +19,20 @@ public class UIManager : MonoBehaviour
     private Text textComponent;
     //private PlayerRespawn playerRespawn;
 
+/*    [Header("Level")]
+    [SerializeField] private Button level02;
+    [SerializeField] private Text textLevel02;*/
     private void Awake()
     {
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
         finishWinScreen.SetActive(false);
     }
+  /*  private void Start()
+    {
+        level02.interactable = false;
+        textLevel02.color = Color.gray;
+    }*/
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))

@@ -213,7 +213,7 @@ MonoBehaviour:
   speed: 10
   jumpPower: 20
   coyoteTime: 0.25
-  extraJumps: 5
+  extraJumps: 2
   wallJumpX: 2000
   wallJumpY: 750
   groundLayer:
@@ -304,4 +304,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpointSound: {fileID: 8300000, guid: 011c6344407768442bd44e6502ad63cf, type: 3}
-  respawnTime: 2

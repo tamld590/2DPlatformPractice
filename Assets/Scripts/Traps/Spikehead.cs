@@ -67,6 +67,9 @@ public class Spikehead : EnemyDamage
     {
         SoundManager.instance.PlaySound(spikeImpactSound);
         base.OnTriggerEnter2D(collision);
-        Stop();
+        if (collision.tag == "Ground" || collision.tag == "Player")
+        {
+            Stop();
+        }
     }
 }

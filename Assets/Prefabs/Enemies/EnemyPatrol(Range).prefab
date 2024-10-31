@@ -516,6 +516,7 @@ MonoBehaviour:
   enemy: {fileID: 647735154637462748}
   speed: 2.5
   idleDuration: 1
+  enemyType: {fileID: 7807166182415144838}
   anim: {fileID: 949456924646530895}
 --- !u!1 &4721824315565559709
 GameObject:
