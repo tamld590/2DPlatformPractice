@@ -159,7 +159,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.08665262, y: -0.54731584}
+  m_Offset: {x: 0.08665264, y: -0.5233651}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -169,7 +169,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.7695668, y: 1.3815761}
+  m_Size: {x: 0.7695668, y: 1.3336746}
   m_EdgeRadius: 0
 --- !u!50 &8522525851339465502
 Rigidbody2D:
@@ -210,10 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922d75d82a6c18c4882b87d753109d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 9
   jumpPower: 20
   coyoteTime: 0.25
-  extraJumps: 2
+  extraJumps: 1
   wallJumpX: 2000
   wallJumpY: 750
   groundLayer:

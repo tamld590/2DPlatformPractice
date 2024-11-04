@@ -44,6 +44,7 @@ public class PlayerRespawn : MonoBehaviour
         if (collision.transform.tag == "Finishline")
         {
             uiManager.FinishWin();
+            Time.timeScale = 0;
             return;
         }
     }

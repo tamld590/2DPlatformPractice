@@ -221,7 +221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Complete all 5 levels to beat the game. Will you dare to accept this challenge?
+  m_Text: 'Complete all levels to beat the game. Will you dare to accept this challenge?
 
     Click
     "Play" to accept.'
@@ -633,7 +633,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 701353859}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: StartMenu
+        m_MethodName: Level1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -960,7 +960,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -552, y: 171}
+  m_AnchoredPosition: {x: -552, y: 169}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539042322

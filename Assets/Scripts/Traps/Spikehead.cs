@@ -53,10 +53,12 @@ public class Spikehead : EnemyDamage
     }
     private void CalculateDirection()
     {
-        directions[0] = transform.right * range;
-        directions[1] = -transform.right * range;
-        directions[2] = transform.up * range;
-        directions[3] = -transform.up * range;
+        /*  directions[0] = transform.right * range;
+          directions[1] = -transform.right * range;
+          directions[2] = transform.up * range;
+          directions[3] = -transform.up * range;*/
+        directions[0] = transform.up * range;
+        directions[1] = -transform.up * range;
     }
     private void Stop()
     {
@@ -67,7 +69,7 @@ public class Spikehead : EnemyDamage
     {
         SoundManager.instance.PlaySound(spikeImpactSound);
         base.OnTriggerEnter2D(collision);
-        if (collision.tag == "Ground" || collision.tag == "Player")
+        if (collision.tag == "Ground")
         {
             Stop();
         }

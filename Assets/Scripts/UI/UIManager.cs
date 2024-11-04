@@ -118,22 +118,27 @@ public class UIManager : MonoBehaviour
     #region Levels
     public void Level1()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(PlayerPrefs.GetInt("level", 3));
     }
     public void Level2()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(PlayerPrefs.GetInt("level", 4));
     }
     public void Level3()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(PlayerPrefs.GetInt("level", 5));
     }
     public void Level4()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(PlayerPrefs.GetInt("level", 6));
     }
     public void Level5()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(PlayerPrefs.GetInt("level", 7));
     }
     #endregion
